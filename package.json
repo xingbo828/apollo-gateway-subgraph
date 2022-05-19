@@ -1,0 +1,17 @@
+{
+  "name": "test-graphql-fed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:gateway": "npm run start --prefix test-gateway",
+    "start:product-subgrapqh": "npm run start --prefix test-fed-product",
+    "start:review-subgrapqh": "npm run start --prefix test-fed-review",
+    "start": "concurrently npm:start:*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.0"
+  }
+}
